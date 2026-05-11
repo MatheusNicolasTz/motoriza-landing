@@ -3,6 +3,7 @@ const depoimentos = [
     nome: "Ana Paula M.",
     cidade: "São Paulo, SP",
     cor: "bg-primary",
+    foto: "/avatars/m-1.jpg",
     estrelas: 5,
     texto: "Passei na primeira tentativa! Estudei 15 minutos por dia durante 3 semanas no ônibus pro trabalho. As questões são exatamente iguais às que caíram na minha prova. Recomendo demais.",
     destaque: "Aprovada na 1ª tentativa",
@@ -13,8 +14,9 @@ const depoimentos = [
     nome: "Ricardo T.",
     cidade: "Belo Horizonte, MG",
     cor: "bg-[#FF9600]",
+    foto: "/avatars/h-1.png",
     estrelas: 5,
-    texto: "Tentei duas vezes antes e não passava. Com o Motoriza entendi onde eu errava — a revisão automática de erros é genial. Na terceira tentativa tirei 28/30.",
+    texto: "Tentei duas vezes antes e não passava. Com o Motoriza entendi onde eu errava, a revisão automática de erros é genial. Na terceira tentativa tirei 28/30.",
     destaque: "28 de 30 acertos",
     temFoto: false,
   },
@@ -22,6 +24,7 @@ const depoimentos = [
     nome: "Camila R.",
     cidade: "Curitiba, PR",
     cor: "bg-[#CE82FF]",
+    foto: "/avatars/m-2.png",
     estrelas: 5,
     texto: "Minha filha de 18 anos usou e passou sem dificuldade. O formato de quiz é muito mais fácil de absorver do que ficar lendo apostila. Gastamos R$ 49,90 em vez de R$ 400 num cursinho.",
     destaque: "Economizou no cursinho",
@@ -32,6 +35,7 @@ const depoimentos = [
     nome: "Thiago N.",
     cidade: "Fortaleza, CE",
     cor: "bg-success",
+    foto: "/avatars/h-2.png",
     estrelas: 5,
     texto: "Travei em sinalização por meses. O app identificou meu ponto fraco e ficou me bombardeando de questões sobre placas até eu zerar. Funcionou. Prova feita em 12 minutos.",
     destaque: "Prova feita em 12 min",
@@ -41,6 +45,7 @@ const depoimentos = [
     nome: "Larissa F.",
     cidade: "Rio de Janeiro, RJ",
     cor: "bg-danger",
+    foto: "/avatars/m-3.png",
     estrelas: 5,
     texto: "Perfeito pra quem não tem tempo. Fiz no intervalo do almoço durante 2 semanas e passei com folga. O simulado completo é idêntico ao DETRAN-RJ.",
     destaque: "2 semanas de estudo",
@@ -51,6 +56,7 @@ const depoimentos = [
     nome: "Gabriel S.",
     cidade: "Porto Alegre, RS",
     cor: "bg-[#1CB0F6]",
+    foto: "/avatars/h-3.png",
     estrelas: 5,
     texto: "Achei que ia levar meses, mas o app organiza tudo tão bem que em 18 dias eu já estava com 90%+ nas simulações. Passei com nota máxima. Vale muito cada centavo.",
     destaque: "Nota máxima na prova",
@@ -70,24 +76,22 @@ function Estrelas({ n }) {
   )
 }
 
-function Avatar({ nome, cor }) {
+function Avatar({ nome, cor, foto }) {
   const iniciais = nome.split(" ").slice(0, 2).map(p => p[0]).join("")
+  if (foto) {
+    return (
+      <img
+        src={foto}
+        alt={nome}
+        className="w-10 h-10 rounded-full object-cover flex-shrink-0 ring-2 ring-line"
+        loading="lazy"
+        onError={(e) => { e.currentTarget.style.display = 'none' }}
+      />
+    )
+  }
   return (
     <div className={`w-10 h-10 rounded-full ${cor} flex items-center justify-center text-white font-extrabold text-sm flex-shrink-0`}>
       {iniciais}
-    </div>
-  )
-}
-
-function PlaceholderFoto({ label }) {
-  return (
-    <div className="mt-4 rounded-xl border-2 border-dashed border-line bg-pageSoft flex flex-col items-center justify-center gap-2 py-6 px-4">
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" className="text-inkMuted">
-        <rect x="2" y="6" width="20" height="14" rx="2" stroke="currentColor" strokeWidth="1.5" />
-        <circle cx="12" cy="13" r="3" stroke="currentColor" strokeWidth="1.5" />
-        <path d="M8 6V5a2 2 0 012-2h4a2 2 0 012 2v1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-      </svg>
-      <span className="text-xs text-inkMuted text-center">{label}</span>
     </div>
   )
 }
@@ -97,7 +101,7 @@ function Card({ d }) {
     <div className="rounded-2xl bg-page ring-1 ring-line p-5 flex flex-col gap-3 break-inside-avoid">
       <div className="flex items-start justify-between gap-3">
         <div className="flex items-center gap-3">
-          <Avatar nome={d.nome} cor={d.cor} />
+          <Avatar nome={d.nome} cor={d.cor} foto={d.foto} />
           <div>
             <div className="font-bold text-ink text-sm">{d.nome}</div>
             <div className="text-xs text-inkMuted">{d.cidade}</div>
@@ -122,7 +126,6 @@ function Card({ d }) {
         {d.destaque}
       </div>
 
-      {d.temFoto && <PlaceholderFoto label={`Foto da ${d.fotoLabel} em breve`} />}
     </div>
   )
 }
@@ -139,7 +142,7 @@ export default function Depoimentos() {
           </h2>
           <p className="mt-3 text-inkSoft">
             Mais de <strong className="text-ink">2.400 aprovados</strong> nos últimos 6 meses.
-            Veja o que eles falam — e o que aparece no bolso depois.
+            Veja o que eles falam, e o que aparece no bolso depois.
           </p>
         </div>
 

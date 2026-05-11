@@ -1,20 +1,18 @@
 import PhoneMockup from "../components/PhoneMockup.jsx"
-import HomeScreen from "../components/phone-screens/HomeScreen.jsx"
-import QuizScreen from "../components/phone-screens/QuizScreen.jsx"
 import StoreBadge from "../components/StoreBadge.jsx"
 
 export default function Hero() {
   return (
     <section className="relative max-w-7xl mx-auto px-6 lg:px-10 pt-12 lg:pt-20 pb-20 grid lg:grid-cols-2 gap-12 items-center">
       <div>
-        <div className="inline-flex items-center gap-2 bg-pageSoft rounded-full pl-2 pr-4 py-1.5 ring-1 ring-line">
-          <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-primary text-white text-xs font-bold">+</span>
-          <span className="text-sm text-inkSoft">Mais de <strong className="text-ink">1.500 questoes</strong> oficiais do DETRAN</span>
+        <div className="inline-flex items-center gap-2 bg-danger/10 rounded-full pl-2 pr-4 py-1.5 ring-1 ring-danger/20">
+          <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-danger text-white text-xs font-bold">!</span>
+          <span className="text-sm text-inkSoft"><strong className="text-ink">1 em cada 3 pessoas</strong> reprova na prova teórica da CNH</span>
         </div>
 
         <h1 className="mt-6 text-5xl md:text-6xl font-extrabold leading-[1.05] tracking-tight">
-          Tire sua CNH em <span className="text-primary">semanas</span>,
-          <br />nao em meses.
+          Passe na <span className="text-primary">prova teórica</span>
+          <br />sem decorar apostila.
         </h1>
 
         <p className="mt-6 text-inkSoft max-w-md text-lg leading-relaxed">
@@ -28,23 +26,19 @@ export default function Hero() {
         </div>
 
         <div className="mt-8 flex items-center gap-4 text-sm text-inkMuted">
-          <div className="flex -space-x-2">
-            <span className="w-8 h-8 rounded-full bg-primary/80 ring-2 ring-page" />
-            <span className="w-8 h-8 rounded-full bg-success/80 ring-2 ring-page" />
-            <span className="w-8 h-8 rounded-full bg-danger/80 ring-2 ring-page" />
-          </div>
+          <span className="bg-success text-white text-xs font-extrabold uppercase tracking-widest px-3 py-1.5 rounded-lg">Grátis</span>
           <span><strong className="text-ink">15 perguntas gratis por dia</strong> - sem cadastro</span>
         </div>
       </div>
 
       <div className="relative h-[620px]">
         <CurvedArrow />
-        <PhoneMockup className="absolute left-2 top-6 -rotate-[5deg]" screen={<HomeScreen />} />
-        <PhoneMockup className="absolute right-0 top-24 rotate-[5deg]" screen={<QuizScreen />} />
+        <PhoneMockup className="absolute left-2 top-6 -rotate-[5deg]" screen={<img src="/print1.png" alt="Tela inicial do Motoriza" className="w-full h-full object-cover object-top" />} />
+        <PhoneMockup className="absolute right-0 top-24 rotate-[5deg]" screen={<img src="/print2.png" alt="Quiz do Motoriza" className="w-full h-full object-cover object-top" />} />
 
         <FloatingTag className="left-[44%] -top-2" title="Sequencia" value="7 dias" tone="success" />
         <FloatingTag className="right-2 top-2" title="Chance de passar" value="92%" tone="primary" />
-        <FloatingTag className="left-2 bottom-10" title="Acertos" value="84%" tone="primary" />
+        <FloatingTag className="left-[36%] bottom-6" title="Acertos" value="84%" tone="primary" />
       </div>
     </section>
   )

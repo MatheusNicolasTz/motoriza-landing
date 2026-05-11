@@ -24,7 +24,7 @@ export default function Privacidade() {
               para a prova teórica da CNH. <strong>Não somos um programa oficial
               do Detran, do CONTRAN, do Denatran nem de qualquer órgão público</strong>.
               Esta política descreve como tratamos os dados de quem usa nosso app
-              — ela não se confunde com a política de privacidade do Detran ou
+             , ela não se confunde com a política de privacidade do Detran ou
               de qualquer outro órgão governamental.
             </p>
           </div>
@@ -36,7 +36,7 @@ export default function Privacidade() {
               responsável pelo serviço (“nós”). Esta Política descreve quais
               dados pessoais coletamos, por que coletamos, como usamos, com quem
               compartilhamos e quais são os seus direitos como titular dos dados,
-              em conformidade com a Lei Geral de Proteção de Dados (LGPD —
+              em conformidade com a Lei Geral de Proteção de Dados (LGPD,
               Lei 13.709/2018).
             </p>
 
@@ -66,7 +66,7 @@ export default function Privacidade() {
             <p>
               Não coletamos CPF, RG, endereço residencial, dados bancários ou
               qualquer documento oficial. Pagamentos eventuais são processados
-              diretamente pela Google Play ou App Store — não recebemos os dados
+              diretamente pela Google Play ou App Store, não recebemos os dados
               do seu cartão.
             </p>
 
@@ -76,16 +76,16 @@ export default function Privacidade() {
               <li>sincronizar seu progresso entre dispositivos;</li>
               <li>personalizar a trilha e a dificuldade das questões;</li>
               <li>enviar notificações de lembrete (somente se você autorizar);</li>
-              <li>melhorar o app — corrigir bugs e priorizar funcionalidades;</li>
+              <li>melhorar o app, corrigir bugs e priorizar funcionalidades;</li>
               <li>responder seus contatos enviados ao suporte.</li>
             </ul>
 
             <h2 className="text-2xl font-bold mt-8">4. Base legal (LGPD)</h2>
             <p>
-              Tratamos seus dados com base em: (i) <em>execução de contrato</em> —
+              Tratamos seus dados com base em: (i) <em>execução de contrato</em>,
               para entregar o serviço que você contratou ao criar a conta; (ii)
-              <em>consentimento</em> — para envio de notificações e comunicações
-              opcionais; (iii) <em>legítimo interesse</em> — para análise de uso
+              <em>consentimento</em>, para envio de notificações e comunicações
+              opcionais; (iii) <em>legítimo interesse</em>, para análise de uso
               agregada e segurança da plataforma.
             </p>
 
@@ -96,15 +96,15 @@ export default function Privacidade() {
             </p>
             <ul className="list-disc pl-6 space-y-2">
               <li>
-                <strong>Google Firebase</strong> — autenticação, banco de dados
+                <strong>Google Firebase</strong>, autenticação, banco de dados
                 em nuvem (Firestore) e notificações;
               </li>
               <li>
-                <strong>Google Play / Apple App Store</strong> — distribuição do
+                <strong>Google Play / Apple App Store</strong>, distribuição do
                 app e, quando aplicável, processamento de assinaturas;
               </li>
               <li>
-                <strong>Autoridades públicas</strong> — apenas mediante ordem
+                <strong>Autoridades públicas</strong>, apenas mediante ordem
                 judicial ou obrigação legal.
               </li>
             </ul>
@@ -114,7 +114,7 @@ export default function Privacidade() {
               Os dados ficam armazenados em servidores do Google Cloud (Firebase),
               com criptografia em trânsito (HTTPS/TLS) e controle de acesso por
               regras de segurança do Firestore. Mesmo assim, nenhum sistema é
-              100% imune — recomendamos senha forte e não compartilhar suas
+              100% imune, recomendamos senha forte e não compartilhar suas
               credenciais.
             </p>
 

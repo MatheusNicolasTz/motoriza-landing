@@ -26,7 +26,7 @@ export default function Termos() {
               nem de qualquer órgão público</strong>. Não temos vínculo, parceria
               ou patrocínio com qualquer entidade governamental. Nossas questões
               são elaboradas com base em editais e materiais públicos e servem
-              apenas como apoio de estudo — a prova oficial é aplicada
+              apenas como apoio de estudo, a prova oficial é aplicada
               exclusivamente pelo Detran do seu estado.
             </p>
           </div>
@@ -94,8 +94,8 @@ export default function Termos() {
 
             <h2 className="text-2xl font-bold mt-8">6. Propriedade intelectual</h2>
             <p>
-              Todo o conteúdo do Motoriza — incluindo textos, questões, ilustrações,
-              marca, logotipo e código — pertence aos seus titulares e é protegido
+              Todo o conteúdo do Motoriza, incluindo textos, questões, ilustrações,
+              marca, logotipo e código, pertence aos seus titulares e é protegido
               por leis de direitos autorais. Você recebe apenas uma licença
               pessoal, limitada, não exclusiva e não transferível para uso do app.
             </p>
@@ -109,7 +109,7 @@ export default function Termos() {
               <li>indisponibilidades temporárias de servidores ou da internet;</li>
               <li>perda de dados causada por desinstalação, troca de dispositivo ou falhas externas;</li>
               <li>
-                decisões tomadas pelo usuário com base no conteúdo do app — o app
+                decisões tomadas pelo usuário com base no conteúdo do app, o app
                 é apoio de estudo, não substitui aulas práticas, médico, psicólogo
                 ou instrutor credenciado.
               </li>
