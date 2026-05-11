@@ -1,26 +1,46 @@
-export default function StoreBadge({ store, href = "#", className = "" }) {
+import { useState } from "react"
+
+export default function StoreBadge({ store, href, className = "" }) {
   const isApple = store === "apple"
-  return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noreferrer"
-      aria-label={isApple ? "Baixe na App Store" : "Disponivel no Google Play"}
-      className={`inline-flex items-center gap-3 rounded-xl bg-black text-white px-5 py-3 hover:bg-black/85 transition ${className}`}
-    >
-      <img
-        src={isApple ? "/apple-icon.png" : "/google-play-icon.png"}
-        alt={isApple ? "App Store" : "Google Play"}
-        className="w-7 h-7 object-contain"
-      />
+  const [showSoon, setShowSoon] = useState(false)
+
+  const label = isApple ? "App Store" : "Google Play"
+  const prefix = isApple ? "Baixe na" : "Disponivel no"
+  const icon = isApple ? "/apple-icon.png" : "/google-play-icon.png"
+
+  const content = (
+    <>
+      <img src={icon} alt={label} className="w-7 h-7 object-contain" />
       <div className="leading-tight text-left">
         <div className="text-[10px] opacity-70 uppercase tracking-wide">
-          {isApple ? "Baixe na" : "Disponivel no"}
+          {showSoon ? "Em breve" : prefix}
         </div>
-        <div className="text-base font-semibold -mt-0.5">
-          {isApple ? "App Store" : "Google Play"}
-        </div>
+        <div className="text-base font-semibold -mt-0.5">{label}</div>
       </div>
-    </a>
+    </>
+  )
+
+  const baseClass = `inline-flex items-center gap-3 rounded-xl bg-black text-white px-5 py-3 hover:bg-black/85 transition ${className}`
+
+  if (href && href !== "#") {
+    return (
+      <a href={href} target="_blank" rel="noreferrer" aria-label={`${prefix} ${label}`} className={baseClass}>
+        {content}
+      </a>
+    )
+  }
+
+  return (
+    <button
+      type="button"
+      onClick={() => {
+        setShowSoon(true)
+        setTimeout(() => setShowSoon(false), 2000)
+      }}
+      aria-label={`${label} em breve`}
+      className={baseClass}
+    >
+      {content}
+    </button>
   )
 }
