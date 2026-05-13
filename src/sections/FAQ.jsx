@@ -22,8 +22,8 @@ const items = [
     a: "Porque CNH ninguem tira em 1 mes - e em 6 meses voce ja passou na prova, fez as aulas praticas e tirou a habilitacao. Pagamento unico, sem renovacao automatica."
   },
   {
-    q: "As questoes sao iguais as do DETRAN?",
-    a: "Sao do mesmo banco oficial usado pelos DETRANs estaduais e do CONTRAN, atualizadas para o codigo de transito vigente."
+    q: "As questoes sao parecidas com as do DETRAN?",
+    a: "As questoes seguem o mesmo formato e os mesmos temas cobrados no exame teorico, baseados no Codigo de Transito Brasileiro (CTB) e nas resolucoes do CONTRAN. Nao reproduzimos questoes oficiais do DETRAN."
   }
 ]
 

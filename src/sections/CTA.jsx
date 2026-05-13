@@ -9,7 +9,7 @@ export default function CTA() {
             Pronto pra tirar sua CNH<br />sem ficar refem da apostila?
           </h2>
           <p className="mt-3 text-white/85 max-w-lg">
-            15 perguntas gratis por dia, simulado oficial e revisao inteligente. Comece em 30 segundos.
+            15 perguntas gratis por dia, simulado completo e revisao inteligente. Comece em 30 segundos.
           </p>
         </div>
         <div className="flex flex-wrap gap-3">

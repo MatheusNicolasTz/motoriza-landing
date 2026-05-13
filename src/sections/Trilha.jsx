@@ -10,7 +10,7 @@ const niveis = [
   { n: 9, name: "Oficina", topic: "Mecanica basica" },
   { n: 10, name: "Painel & Luzes", topic: "Sinalizacao do veiculo" },
   { n: 11, name: "Comandos do Carro", topic: "Operacao correta" },
-  { n: 12, name: "Simuladao", topic: "30 questoes oficiais" }
+  { n: 12, name: "Simuladao", topic: "30 questoes no formato da prova" }
 ]
 
 export default function Trilha() {
@@ -22,7 +22,7 @@ export default function Trilha() {
           12 niveis cobrindo a prova inteira.
         </h2>
         <p className="mt-3 text-inkSoft">
-          Cada nivel tem questoes do banco oficial, explicacao passo a passo e revisao automatica dos seus erros.
+          Cada nivel tem questoes baseadas no CTB e nas resolucoes do CONTRAN, explicacao passo a passo e revisao automatica dos seus erros.
         </p>
       </div>
 

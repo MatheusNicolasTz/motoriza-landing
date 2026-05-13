@@ -21,7 +21,7 @@ export const features = [
   },
   {
     title: "Simulado completo",
-    desc: "Faca a prova exatamente como no DETRAN: 30 questoes, tempo, gabarito ao final e relatorio de acertos.",
+    desc: "Treine no mesmo formato da prova do DETRAN: 30 questoes, tempo, gabarito ao final e relatorio de acertos.",
     icon: "S"
   },
   {

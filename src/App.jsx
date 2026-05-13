@@ -11,6 +11,7 @@ import Login from './pages/Login.jsx'
 import Blog from './pages/Blog.jsx'
 import Termos from './pages/Termos.jsx'
 import Privacidade from './pages/Privacidade.jsx'
+import ExcluirConta from './pages/ExcluirConta.jsx'
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/termos" element={<Termos />} />
         <Route path="/privacidade" element={<Privacidade />} />
+        <Route path="/excluir-conta" element={<ExcluirConta />} />
       </Routes>
     </BrowserRouter>
   )
