@@ -15,7 +15,6 @@ export default function Navbar() {
           <li><a href="#features" className={linkBase}>Recursos</a></li>
           <li><a href="#como-funciona" className={linkBase}>Como funciona</a></li>
           <li><a href="#trilha" className={linkBase}>Trilha</a></li>
-          <li><a href="#precos" className={linkBase}>Preco</a></li>
           <li><a href="#depoimentos" className={linkBase}>Depoimentos</a></li>
           <li><a href="#faq" className={linkBase}>FAQ</a></li>
         </ul>

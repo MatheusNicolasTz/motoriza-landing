@@ -7,7 +7,7 @@ const items = [
   },
   {
     q: "Quantas perguntas eu tenho de graca?",
-    a: "15 perguntas por dia no quiz, todos os dias, sem cadastro. Pra estudar sem limite, o plano Pro libera tudo por 6 meses por R$ 49,90."
+    a: "15 perguntas por dia no quiz, todos os dias, sem cadastro. Pra estudar sem limite, o plano Pro libera tudo por 6 meses - voce ve o valor atualizado dentro do app antes de assinar."
   },
   {
     q: "Funciona pra moto, carro ou ambos?",

@@ -34,10 +34,7 @@ export default function Pricing() {
           {/* Plano gratis */}
           <div className="rounded-2xl bg-page ring-1 ring-line p-8">
             <div className="text-sm font-semibold text-inkMuted uppercase tracking-wider">Gratis</div>
-            <div className="mt-2 flex items-baseline gap-1">
-              <span className="text-5xl font-extrabold text-ink">R$ 0</span>
-              <span className="text-inkMuted">/sempre</span>
-            </div>
+            <div className="mt-2 text-3xl font-extrabold text-ink">Comece de graca</div>
             <p className="mt-3 text-sm text-inkSoft">Pra conhecer o app sem compromisso.</p>
             <ul className="mt-6 space-y-2.5">
               {includesFree.map((it) => <Item key={it} text={it} />)}
@@ -53,12 +50,8 @@ export default function Pricing() {
               Recomendado
             </div>
             <div className="text-sm font-semibold text-primary uppercase tracking-wider">Pro - acesso por 6 meses</div>
-            <div className="mt-2 flex items-baseline gap-1">
-              <span className="text-5xl font-extrabold text-ink">R$ 49,90</span>
-              <span className="text-inkMuted">/6 meses</span>
-            </div>
-            <p className="mt-1 text-xs text-inkMuted">Pagamento unico - so R$ 8,30 por mes</p>
-            <p className="mt-3 text-sm text-inkSoft">Acesso completo ate o dia da sua prova.</p>
+            <div className="mt-2 text-3xl font-extrabold text-ink">Pagamento unico</div>
+            <p className="mt-3 text-sm text-inkSoft">Acesso completo ate o dia da sua prova. Veja o valor atualizado dentro do app.</p>
             <ul className="mt-6 space-y-2.5">
               {includesPro.map((it) => <Item key={it} text={it} highlight />)}
             </ul>

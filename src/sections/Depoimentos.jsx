@@ -26,7 +26,7 @@ const depoimentos = [
     cor: "bg-[#CE82FF]",
     foto: "/avatars/m-2.png",
     estrelas: 5,
-    texto: "Minha filha de 18 anos usou e passou sem dificuldade. O formato de quiz é muito mais fácil de absorver do que ficar lendo apostila. Gastamos R$ 49,90 em vez de R$ 400 num cursinho.",
+    texto: "Minha filha de 18 anos usou e passou sem dificuldade. O formato de quiz é muito mais fácil de absorver do que ficar lendo apostila. Economizamos uma fortuna comparado a um cursinho presencial.",
     destaque: "Economizou no cursinho",
     temFoto: true,
     fotoLabel: "CNH da Camila",
