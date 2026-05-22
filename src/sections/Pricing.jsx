@@ -39,9 +39,9 @@ export default function Pricing() {
             <ul className="mt-6 space-y-2.5">
               {includesFree.map((it) => <Item key={it} text={it} />)}
             </ul>
-            <button className="mt-8 w-full rounded-xl bg-pageSoft hover:bg-line ring-1 ring-line text-ink font-semibold py-3 transition">
+            <a href="https://play.google.com/store/apps/details?id=com.tzdev.motoriza" target="_blank" rel="noreferrer" className="mt-8 block w-full rounded-xl bg-pageSoft hover:bg-line ring-1 ring-line text-ink font-semibold py-3 transition text-center">
               Baixar gratis
-            </button>
+            </a>
           </div>
 
           {/* Plano Pro 6 meses */}
@@ -55,15 +55,15 @@ export default function Pricing() {
             <ul className="mt-6 space-y-2.5">
               {includesPro.map((it) => <Item key={it} text={it} highlight />)}
             </ul>
-            <button className="mt-8 w-full rounded-xl bg-primary hover:bg-primaryDark text-white font-semibold py-3 transition">
+            <a href="https://play.google.com/store/apps/details?id=com.tzdev.motoriza" target="_blank" rel="noreferrer" className="mt-8 block w-full rounded-xl bg-primary hover:bg-primaryDark text-white font-semibold py-3 transition text-center">
               Quero ser Pro
-            </button>
+            </a>
           </div>
         </div>
 
         <div className="mt-10 flex flex-wrap justify-center gap-3">
           <StoreBadge store="apple" />
-          <StoreBadge store="google" />
+          <StoreBadge store="google" href="https://play.google.com/store/apps/details?id=com.tzdev.motoriza" />
         </div>
       </div>
     </section>

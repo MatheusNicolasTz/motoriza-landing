@@ -22,7 +22,7 @@ export default function Hero() {
 
         <div id="download" className="mt-8 flex flex-wrap gap-3">
           <StoreBadge store="apple" />
-          <StoreBadge store="google" />
+          <StoreBadge store="google" href="https://play.google.com/store/apps/details?id=com.tzdev.motoriza" />
         </div>
 
         <div className="mt-8 flex items-center gap-4 text-sm text-inkMuted">

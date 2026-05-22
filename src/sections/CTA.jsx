@@ -14,7 +14,7 @@ export default function CTA() {
         </div>
         <div className="flex flex-wrap gap-3">
           <StoreBadge store="apple" />
-          <StoreBadge store="google" />
+          <StoreBadge store="google" href="https://play.google.com/store/apps/details?id=com.tzdev.motoriza" />
         </div>
       </div>
     </section>

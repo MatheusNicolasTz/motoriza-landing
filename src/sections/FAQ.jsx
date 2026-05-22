@@ -28,6 +28,12 @@ const items = [
 ]
 
 export default function FAQ() {
+  const [openIndex, setOpenIndex] = useState(null)
+
+  function toggle(i) {
+    setOpenIndex(prev => (prev === i ? null : i))
+  }
+
   return (
     <section id="faq" className="max-w-3xl mx-auto px-6 lg:px-10 py-20">
       <div className="text-center">
@@ -38,22 +44,24 @@ export default function FAQ() {
       </div>
 
       <div className="mt-10 space-y-3">
-        {items.map((it, i) => <Item key={i} item={it} />)}
+        {items.map((it, i) => (
+          <Item key={i} item={it} open={openIndex === i} onToggle={() => toggle(i)} />
+        ))}
       </div>
     </section>
   )
 }
 
-function Item({ item }) {
-  const [open, setOpen] = useState(false)
+function Item({ item, open, onToggle }) {
   return (
     <div className="rounded-2xl bg-page ring-1 ring-line overflow-hidden">
       <button
-        onClick={() => setOpen(!open)}
+        onClick={onToggle}
         className="w-full text-left px-5 py-4 flex items-center justify-between gap-4 hover:bg-pageSoft transition"
+        aria-expanded={open}
       >
         <span className="font-semibold text-ink">{item.q}</span>
-        <span className={`text-primary text-xl transition-transform ${open ? "rotate-45" : ""}`}>+</span>
+        <span className={`text-primary text-xl transition-transform duration-200 ${open ? "rotate-45" : ""}`}>+</span>
       </button>
       {open && (
         <div className="px-5 pb-4 text-sm text-inkSoft leading-relaxed">
