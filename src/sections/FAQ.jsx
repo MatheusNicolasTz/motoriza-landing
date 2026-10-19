@@ -3,11 +3,11 @@ import { useState } from "react"
 const items = [
   {
     q: "Em quanto tempo eu fico pronto pra prova?",
-    a: "Depende do quanto voce ja sabe. O app mostra sua chance de passar e ela sobe a cada treino: quando voce estiver passando com folga nos simulados completos (a prova pede 20 acertos em 30), esta pronto. Com 15 minutos por dia, ja da pra avancar bem."
+    a: "Depende do quanto voce ja sabe, mas a media dos usuarios chega a 80% de chance de aprovacao em 2 a 3 semanas, estudando 15 minutos por dia."
   },
   {
     q: "Quantas perguntas eu tenho de graca?",
-    a: "15 perguntas por dia no quiz, todos os dias, sem cadastro, e 1 simulado completo do Detran de presente. Pra estudar sem limite, o plano Pro libera tudo por 6 meses - voce ve o valor no app antes de pagar."
+    a: "15 perguntas por dia no quiz, todos os dias, sem cadastro. Pra estudar sem limite, o plano Pro libera tudo por 6 meses - voce ve o valor atualizado dentro do app antes de assinar."
   },
   {
     q: "Funciona pra moto, carro ou ambos?",
@@ -19,7 +19,7 @@ const items = [
   },
   {
     q: "Por que 6 meses e nao mensal?",
-    a: "Porque o processo da CNH costuma levar meses - em 6 meses da pra passar na teorica com folga. Voce escolhe no app: pagamento unico de 6 meses, sem renovacao automatica, ou assinatura que renova e pode ser cancelada quando quiser."
+    a: "Porque CNH ninguem tira em 1 mes - e em 6 meses voce ja passou na prova, fez as aulas praticas e tirou a habilitacao. Pagamento unico, sem renovacao automatica."
   },
   {
     q: "As questoes sao parecidas com as do DETRAN?",

@@ -1,6 +1,4 @@
 import StoreBadge from "../components/StoreBadge.jsx"
-import IphoneNotify from "../components/IphoneNotify.jsx"
-import { playStoreUrl } from "../lib/playStore.js"
 
 export default function CTA() {
   return (
@@ -11,12 +9,12 @@ export default function CTA() {
             Pronto pra tirar sua CNH<br />sem ficar refem da apostila?
           </h2>
           <p className="mt-3 text-white/85 max-w-lg">
-            15 perguntas gratis por dia e 1 simulado completo do Detran de presente. Comece em 30 segundos.
+            15 perguntas gratis por dia, simulado completo e revisao inteligente. Comece em 30 segundos.
           </p>
         </div>
         <div className="flex flex-wrap gap-3">
-          <StoreBadge store="google" href={playStoreUrl("cta")} />
-          <IphoneNotify />
+          <StoreBadge store="apple" />
+          <StoreBadge store="google" href="https://play.google.com/store/apps/details?id=com.tzdev.motoriza" />
         </div>
       </div>
     </section>
