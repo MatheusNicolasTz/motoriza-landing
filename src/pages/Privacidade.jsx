@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar.jsx'
 import Footer from '../components/Footer.jsx'
 
 export default function Privacidade() {
-  const lastUpdate = '11 de maio de 2026'
+  const lastUpdate = '19 de outubro de 2026'
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -58,16 +58,28 @@ export default function Privacidade() {
                 trocar de celular.
               </li>
               <li>
-                <strong>Dados técnicos:</strong> modelo do aparelho, sistema
-                operacional, versão do app e identificadores anônimos usados pelo
-                Firebase para garantir que o serviço funcione corretamente.
+                <strong>Estatísticas de uso:</strong> eventos como telas abertas,
+                quizzes concluídos e etapas de compra, junto com dados técnicos
+                (modelo do aparelho, sistema operacional, versão do app e um
+                identificador do app gerado pelo Firebase Analytics). Usamos para
+                entender onde o app pode melhorar. Dá para desligar no app, em
+                Configurações &gt; Preferências &gt; Estatísticas de uso.
+              </li>
+              <li>
+                <strong>Lista de espera do iPhone:</strong> se você pedir aviso
+                da versão para iPhone aqui no site, guardamos o e-mail que você
+                informar, só para avisar quando ela sair.
               </li>
             </ul>
             <p>
-              Não coletamos CPF, RG, endereço residencial, dados bancários ou
-              qualquer documento oficial. Pagamentos eventuais são processados
-              diretamente pela Google Play ou App Store, não recebemos os dados
-              do seu cartão.
+              No modo Visitante não há conta: os dados ficam só no aparelho.
+            </p>
+            <p>
+              Não coletamos CPF, RG, endereço residencial, dados bancários,
+              localização precisa ou qualquer documento oficial.{' '}
+              <strong>Não usamos ID de publicidade e o app não exibe
+              anúncios.</strong> Pagamentos são processados diretamente pela
+              Google Play ou App Store, não recebemos os dados do seu cartão.
             </p>
 
             <h2 className="text-2xl font-bold mt-8">3. Para que usamos seus dados</h2>
@@ -97,7 +109,7 @@ export default function Privacidade() {
             <ul className="list-disc pl-6 space-y-2">
               <li>
                 <strong>Google Firebase</strong>, autenticação, banco de dados
-                em nuvem (Firestore) e notificações;
+                em nuvem (Firestore) e estatísticas de uso (Firebase Analytics);
               </li>
               <li>
                 <strong>Google Play / Apple App Store</strong>, distribuição do
@@ -149,10 +161,11 @@ export default function Privacidade() {
 
             <h2 className="text-2xl font-bold mt-8">9. Crianças e adolescentes</h2>
             <p>
-              O Motoriza é destinado a maiores de 18 anos (idade mínima para
-              tirar a CNH no Brasil). Se você tem entre 16 e 18 anos e está
-              tirando a Permissão para Dirigir, recomendamos uso com
-              acompanhamento dos pais ou responsáveis.
+              O Motoriza é destinado a candidatos à CNH, que precisam ter pelo
+              menos 18 anos (art. 140 do Código de Trânsito Brasileiro). Não
+              direcionamos o app a menores de 13 anos nem coletamos dados deles
+              de forma consciente. Se identificarmos dados de criança,
+              removeremos.
             </p>
 
             <h2 className="text-2xl font-bold mt-8">10. Alterações nesta Política</h2>
