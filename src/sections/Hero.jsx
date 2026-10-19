@@ -9,7 +9,7 @@ export default function Hero() {
       <div>
         <div className="inline-flex items-center gap-2 bg-danger/10 rounded-full pl-2 pr-4 py-1.5 ring-1 ring-danger/20">
           <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-danger text-white text-xs font-bold">!</span>
-          <span className="text-sm text-inkSoft"><strong className="text-ink">1 em cada 3 pessoas</strong> reprova na prova teórica da CNH</span>
+          <span className="text-sm text-inkSoft">Prova teórica: <strong className="text-ink">30 questões, 20 acertos para passar</strong></span>
         </div>
 
         <h1 className="mt-6 text-5xl md:text-6xl font-extrabold leading-[1.05] tracking-tight">
