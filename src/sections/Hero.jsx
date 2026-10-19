@@ -1,5 +1,7 @@
 import PhoneMockup from "../components/PhoneMockup.jsx"
 import StoreBadge from "../components/StoreBadge.jsx"
+import IphoneNotify from "../components/IphoneNotify.jsx"
+import { playStoreUrl } from "../lib/playStore.js"
 
 export default function Hero() {
   return (
@@ -21,8 +23,8 @@ export default function Hero() {
         </p>
 
         <div id="download" className="mt-8 flex flex-wrap gap-3">
-          <StoreBadge store="apple" />
-          <StoreBadge store="google" href="https://play.google.com/store/apps/details?id=com.tzdev.motoriza" />
+          <StoreBadge store="google" href={playStoreUrl("hero")} />
+          <IphoneNotify />
         </div>
 
         <div className="mt-8 flex items-center gap-4 text-sm text-inkMuted">
