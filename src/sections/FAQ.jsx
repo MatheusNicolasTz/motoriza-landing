@@ -19,7 +19,7 @@ const items = [
   },
   {
     q: "Por que 6 meses e nao mensal?",
-    a: "Porque o processo da CNH costuma levar meses - em 6 meses da pra passar na teorica com folga. As opcoes de pagamento e o preco aparecem no app antes de pagar; se for assinatura, da pra cancelar quando quiser na Google Play."
+    a: "Porque o processo da CNH costuma levar meses - em 6 meses da pra passar na teorica com folga. Voce escolhe no app: pagamento unico de 6 meses, sem renovacao automatica, ou assinatura que renova e pode ser cancelada quando quiser."
   },
   {
     q: "As questoes sao parecidas com as do DETRAN?",

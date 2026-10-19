@@ -52,10 +52,11 @@ export default function Pricing() {
               Recomendado
             </div>
             <div className="text-sm font-semibold text-primary uppercase tracking-wider">Pro - 6 meses</div>
-            <div className="mt-2 text-3xl font-extrabold text-ink">Tudo liberado por 6 meses</div>
+            <div className="mt-2 text-3xl font-extrabold text-ink">Pague uma vez ou assine</div>
             <p className="mt-3 text-sm text-inkSoft">
-              As opcoes de pagamento e o preco aparecem no app antes de voce pagar.
-              Se for assinatura, voce cancela quando quiser na Google Play.
+              No app voce escolhe: <strong className="text-ink">pagamento unico de 6 meses</strong>, que nao renova sozinho,
+              ou <strong className="text-ink">assinatura</strong> com renovacao automatica, que voce cancela quando quiser.
+              O preco aparece no app antes de pagar.
             </p>
             <ul className="mt-6 space-y-2.5">
               {includesPro.map((it) => <Item key={it} text={it} highlight />)}
