@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { createPortal } from 'react-dom'
-import { auth } from '../lib/firebase.js'
 import { utmSource } from '../lib/playStore.js'
 
 // O app ainda é só Android. Em vez de um selo "Em breve" que não leva a lugar
@@ -20,8 +19,12 @@ export default function IphoneNotify({ className = '' }) {
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) return
     setState('sending')
     try {
-      // Firestore só carrega quando alguém pede o aviso: não pesa na abertura do site.
-      const { getFirestore, collection, addDoc, serverTimestamp } = await import('firebase/firestore')
+      // Firebase só carrega quando alguém pede o aviso: não pesa na abertura do site
+      // e, se a configuração falhar, só este botão cai no plano B (e-mail), nunca a página.
+      const [{ auth }, { getFirestore, collection, addDoc, serverTimestamp }] = await Promise.all([
+        import('../lib/firebase.js'),
+        import('firebase/firestore'),
+      ])
       const db = getFirestore(auth.app)
       await addDoc(collection(db, 'iphoneWaitlist'), {
         email: value,
